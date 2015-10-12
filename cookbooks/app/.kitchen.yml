@@ -5,8 +5,13 @@ driver:
 ## localhost on the host.
 ## see also: https://docs.vagrantup.com/v2/networking/forwarded_ports.html
 
+<<<<<<< HEAD
   network:
   - ["forwarded_port", {guest: 80, host: 80}]
+=======
+network:
+    - ["forwarded_port", {guest: 80, host: 80}]
+>>>>>>> 5e478cbccc8083d73b7112066ef39a4f1b2ef3cb
 
 provisioner:
   name: policyfile_zero
@@ -22,7 +27,10 @@ platforms:
     driver_config:
       forward:
       - 80:80
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e478cbccc8083d73b7112066ef39a4f1b2ef3cb
 suites:
   - name: default
     attributes:
